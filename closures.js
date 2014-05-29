@@ -1,4 +1,4 @@
-var outsideUniverse = "I'm Outside the Known Universe";
+outsideUniverse = "I'm Outside the Known Universe";
 (function(){
   'use strict'
 
@@ -20,12 +20,6 @@ var outsideUniverse = "I'm Outside the Known Universe";
     var pIVSC = person3;
     var personLGG = "I'm in the Local Galactic Group";
     return cb(personLGG);
-  }
-
-  var earth = function(person7, cb){
-    var pSS = person7;
-    var personE = "I'm on Earth";
-    return cb(personE);
   }
 
   var enterMilkyWay = function(personInLocalGalacticGroup){
@@ -54,18 +48,25 @@ var outsideUniverse = "I'm Outside the Known Universe";
 
       solarInterstellarNeighbourHood(personInMilkyWayGalaxy, function(personInSolarInterstellarNeighbourHood){
         var _personInSolarInterstellarNeighbourHood = personInSolarInterstellarNeighbourHood;
-        solarSystem(personInSolarInterstellarNeighbourHood, function(personInSolarSystem){
+        var enterSolarSystem =  function(personInSolarSystem){
           var _personInSolarSystem = personInSolarSystem;
-          earth(personInSolarSystem,function(personOnEarth){
-            var _personOnEarth = personOnEarth;
+          var earth = function(person7, cb){
+            var pSS = person7;
+            var personE = "I'm on Earth";
+            return function(personE){
+              var _personOnEarth = personE;
 
+              return  _personOnEarth;
+              //nothing is accessable here.
+              // only personOnEarth;
 
-            //nothing is accessable here.
-            // only personOnEarth;
-            debugger;
-
-          });
-        });
+            }()
+          }
+          debugger;
+          var x = earth(personInSolarSystem);
+          debugger;
+        }
+        solarSystem(personInSolarInterstellarNeighbourHood, enterSolarSystem);
       });
     });
   }
