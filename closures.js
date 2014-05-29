@@ -35,7 +35,12 @@ var outsideUniverse = "I'm Outside the Known Universe";
     milkyWayGalaxy(personInLocalGalacticGroup, function(personInMilkyWayGalaxy){
       var _personInMilkyWayGalaxy = personInMilkyWayGalaxy;
 
-      
+      var solarInterstellarNeighbourHood = function (person5,cb) {
+        var pIMWG = person5;
+        var personISIN = "I'm in the Solar InterStellar Neighbourhood"
+        return cb(personISIN);
+      }
+
       solarInterstellarNeighbourHood(personInMilkyWayGalaxy, function(personInSolarInterstellarNeighbourHood){
         var _personInSolarInterstellarNeighbourHood = personInSolarInterstellarNeighbourHood;
         solarSystem(personInSolarInterstellarNeighbourHood, function(personInSolarSystem){
