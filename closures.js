@@ -37,8 +37,14 @@ var outsideUniverse = "I'm Outside the Known Universe";
 
       var solarInterstellarNeighbourHood = function (person5,cb) {
         var pIMWG = person5;
-        var personISIN = "I'm in the Solar InterStellar Neighbourhood"
+        var personISIN = "I'm in the Solar InterStellar Neighbourhood";
         return cb(personISIN);
+      }
+
+      var solarSystem = function(person6,cb){
+        var pISIN = person1;
+        var personSS = "I'm in the Solar System";
+        return cb(personSS);
       }
 
       solarInterstellarNeighbourHood(personInMilkyWayGalaxy, function(personInSolarInterstellarNeighbourHood){
@@ -52,10 +58,10 @@ var outsideUniverse = "I'm Outside the Known Universe";
 
 
 
-          })
-        })
-      })
-    })
+          });
+        });
+      });
+    });
   }
 
 
@@ -64,16 +70,6 @@ var outsideUniverse = "I'm Outside the Known Universe";
     virgoSuperCluster(personInLocalSuperCluster, function (personInVirgoSuperCluster) {
       var _personInVirgoSuperCluster = personInVirgoSuperCluster;
       localGalacticGroup(personInVirgoSuperCluster, enterMilkyWay)
-    })
-  })
-
-
-
-
-
-
-
-
-
-
+    });
+  });
 })()
