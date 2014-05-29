@@ -22,6 +22,13 @@ outsideUniverse = "I'm Outside the Known Universe";
     return cb(personLGG);
   }
 
+  var earth = function(person7, cb){
+    debugger;
+    var pSS = person7;
+    var personE = "I'm on Earth";
+    return cb(personE);
+  }
+
   var enterMilkyWay = function(personInLocalGalacticGroup){
     var _personInLocalGalacticGroup = personInLocalGalacticGroup;
 
@@ -48,25 +55,18 @@ outsideUniverse = "I'm Outside the Known Universe";
 
       solarInterstellarNeighbourHood(personInMilkyWayGalaxy, function(personInSolarInterstellarNeighbourHood){
         var _personInSolarInterstellarNeighbourHood = personInSolarInterstellarNeighbourHood;
-        var enterSolarSystem =  function(personInSolarSystem){
+        solarSystem(personInSolarInterstellarNeighbourHood, function(personInSolarSystem){
           var _personInSolarSystem = personInSolarSystem;
-          var earth = function(person7, cb){
-            var pSS = person7;
-            var personE = "I'm on Earth";
-            return function(personE){
-              var _personOnEarth = personE;
+          earth(personInSolarSystem,function(personOnEarth){
+            var _personOnEarth = personOnEarth;
 
-              return  _personOnEarth;
-              //nothing is accessable here.
-              // only personOnEarth;
 
-            }()
-          }
-          debugger;
-          var x = earth(personInSolarSystem);
-          debugger;
-        }
-        solarSystem(personInSolarInterstellarNeighbourHood, enterSolarSystem);
+            //nothing is accessable here.
+            // only personOnEarth;
+            debugger;
+
+          });
+        });
       });
     });
   }
