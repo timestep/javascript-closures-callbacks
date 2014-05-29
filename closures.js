@@ -36,7 +36,7 @@ var outsideUniverse = "I'm Outside the Known Universe";
       var personIMWG = "I'm in the Milky Way Galaxy";
       return cb(personIMWG);
     }
-    
+
     milkyWayGalaxy(personInLocalGalacticGroup, function(personInMilkyWayGalaxy){
       var _personInMilkyWayGalaxy = personInMilkyWayGalaxy;
 
@@ -47,7 +47,7 @@ var outsideUniverse = "I'm Outside the Known Universe";
       }
 
       var solarSystem = function(person6,cb){
-        var pISIN = person1;
+        var pISIN = person6;
         var personSS = "I'm in the Solar System";
         return cb(personSS);
       }
@@ -75,4 +75,5 @@ var outsideUniverse = "I'm Outside the Known Universe";
       localGalacticGroup(personInVirgoSuperCluster, enterMilkyWay)
     });
   });
+
 })()
