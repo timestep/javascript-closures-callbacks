@@ -22,6 +22,11 @@ var outsideUniverse = "I'm Outside the Known Universe";
     return cb(personLGG);
   }
 
+  var earth = function(person7, cb){
+    var pSS = person7;
+    var personE = "I'm on Earth";
+    return cb(personE);
+  }
 
   var enterMilkyWay = function(personInLocalGalacticGroup){
     var _personInLocalGalacticGroup = personInLocalGalacticGroup;
@@ -31,7 +36,7 @@ var outsideUniverse = "I'm Outside the Known Universe";
       var personIMWG = "I'm in the Milky Way Galaxy";
       return cb(personIMWG);
     }
-
+    
     milkyWayGalaxy(personInLocalGalacticGroup, function(personInMilkyWayGalaxy){
       var _personInMilkyWayGalaxy = personInMilkyWayGalaxy;
 
@@ -55,8 +60,6 @@ var outsideUniverse = "I'm Outside the Known Universe";
             var _personOnEarth = personOnEarth;
 
             debugger;
-
-
 
           });
         });
