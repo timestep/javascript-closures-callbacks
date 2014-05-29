@@ -59,6 +59,9 @@ var outsideUniverse = "I'm Outside the Known Universe";
           earth(personInSolarSystem,function(personOnEarth){
             var _personOnEarth = personOnEarth;
 
+
+            //nothing is accessable here.
+            // only personOnEarth;
             debugger;
 
           });
