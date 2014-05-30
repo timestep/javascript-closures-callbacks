@@ -7,12 +7,16 @@ outsideUniverse = "I'm Outside the Known Universe";
   var earth = function (personOutSideEarth,cb){
     var _personOutSideEarth = personOutSideEarth;
     var personE = "I'm on Earth";
-    var personOnEarth = personE;
-    return cb(personOnEarth);
+    return cb(personE);
+  }
+
+  var findEarthMan = function (person) {
+    console.log(person);
   }
 
   var personInSolarSystem = "I'm in the Solar System";
   earth(personInSolarSystem,function(earthMan){
       var _earthMan = earthMan;
+      debugger;
   });
 })()
