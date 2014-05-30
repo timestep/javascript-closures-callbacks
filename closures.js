@@ -11,12 +11,15 @@ outsideUniverse = "I'm Outside the Known Universe";
   }
 
   var findEarthMan = function (person) {
+    console.log(personInSolarSystem);
     console.log(person);
   }
 
   var personInSolarSystem = "I'm in the Solar System";
+
   earth(personInSolarSystem,function(earthMan){
       var _earthMan = earthMan;
       debugger;
   });
+
 })()
