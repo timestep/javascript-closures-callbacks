@@ -10,24 +10,26 @@ outsideUniverse = "I'm Outside the Known Universe";
     return cb(personInSolarSystem);
   }
 
-
   var earth = function (personOutSideEarth,cb){
     var _personOutSideEarth = personOutSideEarth;
     var personE = "I'm on Earth";
     return cb(personE);
   }
 
+  var findSolarSystem = function (personInSolarSystem){
+    var _personInSolarSystem = personInSolarSystem;
+    earth(personInSolarSystem,findEarthMan);
+    debugger;
+  }
+
   var findEarthMan = function (person) {
+    // console.log(personInSolarSystem);
+    // console.log(_personInSolarSystem);
     console.log(personInUniverse);
     console.log(person);
     debugger;
   }
 
-  solarSystem(personInUniverse,function(personInSolarSystem){
-
-
-    earth(personInSolarSystem,findEarthMan);
-    debugger;
-  })
+  solarSystem(personInUniverse,findSolarSystem)
 
 })()
