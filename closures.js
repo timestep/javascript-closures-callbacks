@@ -19,4 +19,5 @@ outsideUniverse = "I'm Outside the Known Universe";
 
   var personInSolarSystem = "I'm in the Solar System";
   earth(personInSolarSystem,findEarthMan);
+  
 })()
