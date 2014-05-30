@@ -27,7 +27,7 @@ outsideUniverse = "I'm Outside the Known Universe";
 
 
     earth(personInSolarSystem,findEarthMan);
-
+    debugger;
   })
 
 })()
